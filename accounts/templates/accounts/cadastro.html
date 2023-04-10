@@ -11,27 +11,26 @@
     <input type="text" name="nome" value="{{request.POST.nome}}" class="form-control">
   </div>
   <div class="form-group">
-    <div class="form-group">
-      <label>Sobrenome</label>
-      <input type="text" name="sobrenome" value="{{request.POST.sobrenome}}" class="form-control">
-    </div>
+    <label>Sobrenome</label>
+    <input type="text" name="sobrenome" value="{{request.POST.sobrenome}}" class="form-control">
+  </div>
+  <div class="form-group">
     <label>Email</label>
-    <input type="email" name="email"  value="{{request.POST.email}}" class="form-control" placeholder="email...">
+    <input type="email" name="email" value="{{request.POST.email}}" class="form-control">
   </div>
   <div class="form-group">
     <label>Usuário</label>
-    <input type="text" name="usuario" value="{{request.POST.usuario}}" class="form-control" placeholder="name">
+    <input type="text" name="usuario" value="{{request.POST.usuario}}" class="form-control">
   </div>
   <div class="form-group">
     <label>Senha</label>
-    <input type="password" name="senha" value="{{request.POST.senha}}" class="form-control" placeholder="password">
+    <input type="password" name="senha" class="form-control">
   </div>
   <div class="form-group">
-    <label>Repetir Senha</label>
-    <input type="password" name="senha2" value="{{request.POST.senha2}}" class="form-control">
+    <label>Repetir a senha</label>
+    <input type="password" name="senha2" class="form-control">
   </div>
-
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary">Cadastrar-me</button>
 </form>
 
 {% endblock %}
